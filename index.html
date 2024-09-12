@@ -6,11 +6,36 @@
     <title>Projeto-HTML</title>
     <link rel="stylesheet" href="css/index.css">
     <script src="js/index.js"></script>
+    <style>
+        .botao {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .botao:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <h1>PROJETO HTML EM DESENVOLVIMENTO</h1>
     <input type="button" value="Click" onclick="alertar()">
-    <input type="button" value="Chamar Formulario" onclick="/Formulario_HTML.html">
+
+    <button onclick="irParaPagina()">Chamar Formulario </button>
+    <script>
+        function irParaPagina()
+        {window.location.href="Formulario_HTML.html" ;}
+
+    </script>
+
+<a href="tabela.html" class="botao">Pagina Tabela</a>
+
     <p>Ordenada</p>
     <ol>
         <li>Primeira Linha</li>
